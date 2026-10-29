@@ -124,12 +124,12 @@
                         type="text" 
                         id="nama"
                         name="nama" 
-                        value="{{ $teman->nama }}" 
+                        value="{{ $teman->nama_teman }}" 
                         placeholder="Masukkan nama lengkap..." 
                         required
                         class="w-full px-4 py-3 rounded-xl bg-kawami-bg/30 border border-kawami-dark/20 text-kawami-dark placeholder-kawami-dark/40 focus:outline-none focus:border-kawami-dark focus:ring-2 focus:ring-kawami-cyan/30 transition-all text-sm font-medium shadow-xs"
                     />
-                    @error('nama')
+                    @error('nama_teman')
                         <div class="text-xs font-bold mt-1 text-rose-700 bg-rose-50 px-3 py-1.5 rounded-lg border border-rose-200 inline-block">
                             {{ $message }}
                         </div>
