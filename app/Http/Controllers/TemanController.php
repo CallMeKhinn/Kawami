@@ -40,4 +40,13 @@ class TemanController extends Controller
 
         return redirect('/')->with('success', 'Data teman berhasil disimpan.');
     }
+    public function edit($id){
+        $teman = Teman::findOrFail($id);
+        return view('edit', compact('teman'));
+    }
+    public function hapus($id){
+        $teman = Teman::findOrFail($id);
+        $teman->delete();
+        return redirect('/')->with('success', 'Data teman berhasil dihapus.');
+    }
 }
